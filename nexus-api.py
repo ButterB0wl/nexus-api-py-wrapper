@@ -38,7 +38,7 @@ def make_request(req_type, url):
     elif req_type == 'put':
         return requests.put(url, auth=config.AUTH)
     else:
-        raise Exception('No valid http requests type', 'req_type')
+        raise Exception('No valid http requests type', req_type)
 
 
 def main(argv):
